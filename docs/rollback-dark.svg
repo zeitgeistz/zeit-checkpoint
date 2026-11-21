@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="206" viewBox="0 0 920 206" role="img" aria-label="Rollback: preview, confirm with the token, re-check, save an undo point, then write">
+<title>Rollback: preview, confirm with the token, re-check, save an undo point, then write</title>
+<style>svg{--fg:#e6edf3;--muted:#9198a1;--box:#161b22;--line:#3d444d;--acc:#e8916f;--accbg:#2e1d16;--ok:#3fb950;--okbg:#11261a;--bad:#f85149;--badbg:#2d1517;--page:#0d1117}
+text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}
+.box{fill:var(--box);stroke:var(--line);stroke-width:1}
+.box.acc{fill:var(--accbg);stroke:var(--acc)}
+.box.ok{fill:var(--okbg);stroke:var(--ok)}
+.box.bad{fill:var(--badbg);stroke:var(--bad)}
+.box.dash{fill:none;stroke-dasharray:4 3}
+.ttl{font-size:13px;font-weight:600;fill:var(--fg)}
+.ttl.ok{fill:var(--ok)}.ttl.bad{fill:var(--bad)}.ttl.acc{fill:var(--acc)}
+.sub{font-size:11.5px;fill:var(--muted)}
+.mono{font-family:ui-monospace,SFMono-Regular,"Cascadia Mono",Consolas,Menlo,monospace}
+.lane{font-size:11px;font-weight:600;letter-spacing:.09em;fill:var(--muted)}
+.lbl{font-size:11px;fill:var(--muted)}
+.lbl.acc{fill:var(--acc)}.lbl.bad{fill:var(--bad)}.lbl.ok{fill:var(--ok)}
+.arr{stroke:var(--muted);stroke-width:1.4;fill:none;marker-end:url(#a)}
+.arr.acc{stroke:var(--acc);marker-end:url(#aa)}
+.arr.bad{stroke:var(--bad);marker-end:url(#ab)}
+.arr.dash{stroke-dasharray:4 3}
+.ah{fill:var(--muted)}.ah.acc{fill:var(--acc)}.ah.bad{fill:var(--bad)}
+.axis{stroke:var(--line);stroke-width:2}
+.dot{fill:var(--page);stroke:var(--muted);stroke-width:2}
+.dot.ok{fill:var(--ok);stroke:var(--ok)}
+.dot.acc{fill:var(--acc);stroke:var(--acc)}
+.dot.dash{stroke-dasharray:3 2}
+.halo{fill:none;stroke:var(--acc);stroke-width:1.5;opacity:.45}
+.check{stroke:var(--page);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+</style>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah "/></marker><marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah acc"/></marker><marker id="ab" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah bad"/></marker></defs>
+<rect x="30" y="36" width="148" height="64" rx="8" class="box "/><text x="104" y="65" text-anchor="middle" class="ttl ">Preview</text><text x="104" y="82" text-anchor="middle" class="sub">nothing written yet</text>
+<path d="M180 68H205" class="arr "/>
+<rect x="208" y="36" width="148" height="64" rx="8" class="box "/><text x="282" y="65" text-anchor="middle" class="ttl ">Confirm</text><text x="282" y="82" text-anchor="middle" class="sub mono">--confirm &lt;token&gt;</text>
+<path d="M358 68H383" class="arr "/>
+<rect x="386" y="36" width="148" height="64" rx="8" class="box "/><text x="460" y="65" text-anchor="middle" class="ttl ">Re-check files</text><text x="460" y="82" text-anchor="middle" class="sub">same as the preview?</text>
+<path d="M536 68H561" class="arr "/>
+<rect x="564" y="36" width="148" height="64" rx="8" class="box acc"/><text x="638" y="65" text-anchor="middle" class="ttl acc">Save undo point</text><text x="638" y="82" text-anchor="middle" class="sub">of the files it changes</text>
+<path d="M714 68H739" class="arr "/>
+<rect x="742" y="36" width="148" height="64" rx="8" class="box ok"/><text x="816" y="65" text-anchor="middle" class="ttl ok">Write files</text><text x="816" y="82" text-anchor="middle" class="sub">temp file, then rename</text>
+<text x="549" y="27" text-anchor="middle" class="lbl">unchanged</text>
+<path d="M460 101V139" class="arr bad"/>
+<text x="468" y="124" text-anchor="start" class="lbl bad">changed</text>
+<rect x="386" y="142" width="148" height="46" rx="8" class="box bad"/><text x="460" y="162" text-anchor="middle" class="ttl bad">Stop</text><text x="460" y="179" text-anchor="middle" class="sub">and show a fresh preview</text>
+<path d="M385 165H104V103" class="arr "/>
+<text x="244" y="181" text-anchor="middle" class="lbl">preview again</text>
+<path d="M638 101V139" class="arr dash"/>
+<rect x="564" y="142" width="148" height="46" rx="8" class="box dash"/><text x="638" y="162" text-anchor="middle" class="ttl dash">Undo any time</text><text x="638" y="179" text-anchor="middle" class="sub mono">/zeit-undo</text>
+</svg>
