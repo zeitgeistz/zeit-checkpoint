@@ -1,0 +1,6 @@
+{
+  "name": "zeit-checkpoint",
+  "owner": { "name": "zeitgeistz" },
+  "description": "zeit-checkpoint: local checkpoints for Claude Code with previewed, undoable rollback",
+  "plugins": [{ "name": "zeit-checkpoint", "source": "./" }]
+}

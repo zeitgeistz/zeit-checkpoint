@@ -1,0 +1,10 @@
+{
+  "name": "zeit-checkpoint",
+  "version": "0.1.0",
+  "description": "Local content-addressed checkpoints with previewed, undoable rollback",
+  "author": { "name": "zeitgeistz" },
+  "homepage": "https://github.com/zeitgeistz/zeit-checkpoint",
+  "repository": "https://github.com/zeitgeistz/zeit-checkpoint",
+  "license": "MIT",
+  "types": "./types/index.d.ts"
+}
