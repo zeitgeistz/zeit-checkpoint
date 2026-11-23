@@ -1,3 +1,5 @@
+![zeit-checkpoint captures local snapshots, previews changes, and rolls back to a selected checkpoint.](docs/banner.svg)
+
 <div align="center">
 
 # zeit-checkpoint

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" viewBox="0 0 960 280" role="img" aria-labelledby="title desc">
+  <title id="title">zeit-checkpoint</title>
+  <desc id="desc">zeit-checkpoint captures local snapshots, previews changes, and rolls back to a selected checkpoint.</desc>
+  <rect x="0.5" y="0.5" width="959" height="279" rx="16" fill="#101416" stroke="#34403E"/>
+  <path d="M52 49h30m-30 4h14" fill="none" stroke="#CBEA91" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="52" y="110" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="61" font-weight="700" fill="#F4F0E7" letter-spacing="-2.6">zeit-checkpoint</text>
+  <text x="54" y="148" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="23" font-weight="400" fill="#BAC4BA">Local snapshots and undoable rollbacks</text>
+  <text x="54" y="176" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="23" font-weight="400" fill="#BAC4BA">for Claude Code.</text>
+  <g aria-hidden="true">
+    <path d="M650 48h254m-254 26h254m-254 26h254m-254 26h254m-254 26h254m-254 26h254M659 48v130m26-130v130m26-130v130m26-130v130m26-130v130m26-130v130m26-130v130m26-130v130m26-130v130m26-130v130" fill="none" stroke="#2A342F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 5"/>
+    <path d="M650 63V48h15m224 0h15v15M650 163v15h15m224 0h15v-15" fill="none" stroke="#718271" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="669" y="65" width="216" height="98" rx="8" fill="#191F20" stroke="#34403E"/>
+    <path d="M690 119h172" fill="none" stroke="#485750" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="694" cy="119" r="4" fill="#718271" stroke="none"/>
+    <circle cx="746" cy="119" r="10" fill="#222B24" stroke="#CBEA91"/>
+    <path d="m742 119 3 3 5-6" fill="none" stroke="#CBEA91" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="801" cy="119" r="4" fill="#718271" stroke="none"/>
+    <circle cx="855" cy="119" r="7" fill="#191F20" stroke="#CBEA91"/>
+    <path d="M855 106v-9q0-12-12-12h-85q-12 0-12 12v8m-5-6 5 6 5-6" fill="none" stroke="#CBEA91" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M685 143h18m34 0h18m37 0h18m36 0h18" fill="none" stroke="#718271" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <rect x="52" y="206" width="270.6666666666667" height="43" rx="7" fill="#222B24" stroke="#718271"/>
+  <text x="187.33333333333334" y="233" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="17" font-weight="700" fill="#CBEA91" text-anchor="middle">Capture</text>
+  <path d="M326.6666666666667 227.5h14m-4-4 4 4-4 4" fill="none" stroke="#CBEA91" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="344.6666666666667" y="206" width="270.6666666666667" height="43" rx="7" fill="#191F20" stroke="#34403E"/>
+  <text x="480" y="233" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="17" font-weight="700" fill="#F4F0E7" text-anchor="middle">Preview</text>
+  <path d="M619.3333333333334 227.5h14m-4-4 4 4-4 4" fill="none" stroke="#CBEA91" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="637.3333333333334" y="206" width="270.6666666666667" height="43" rx="7" fill="#191F20" stroke="#34403E"/>
+  <text x="772.6666666666667" y="233" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="17" font-weight="700" fill="#F4F0E7" text-anchor="middle">Roll back</text>
+</svg>
