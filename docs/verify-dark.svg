@@ -1,42 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="206" viewBox="0 0 880 206" role="img" aria-label="Verified checkpoints: snapshot, run tests, check, mark verified or offer a rollback">
 <title>Verified checkpoints: snapshot, run tests, check, mark verified or offer a rollback</title>
-<style>svg{--fg:#e6edf3;--muted:#9198a1;--box:#161b22;--line:#3d444d;--acc:#e8916f;--accbg:#2e1d16;--ok:#3fb950;--okbg:#11261a;--bad:#f85149;--badbg:#2d1517;--page:#0d1117}
-text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}
-.box{fill:var(--box);stroke:var(--line);stroke-width:1}
-.box.acc{fill:var(--accbg);stroke:var(--acc)}
-.box.ok{fill:var(--okbg);stroke:var(--ok)}
-.box.bad{fill:var(--badbg);stroke:var(--bad)}
-.box.dash{fill:none;stroke-dasharray:4 3}
-.ttl{font-size:13px;font-weight:600;fill:var(--fg)}
-.ttl.ok{fill:var(--ok)}.ttl.bad{fill:var(--bad)}.ttl.acc{fill:var(--acc)}
-.sub{font-size:11.5px;fill:var(--muted)}
-.mono{font-family:ui-monospace,SFMono-Regular,"Cascadia Mono",Consolas,Menlo,monospace}
-.lane{font-size:11px;font-weight:600;letter-spacing:.09em;fill:var(--muted)}
-.lbl{font-size:11px;fill:var(--muted)}
-.lbl.acc{fill:var(--acc)}.lbl.bad{fill:var(--bad)}.lbl.ok{fill:var(--ok)}
-.arr{stroke:var(--muted);stroke-width:1.4;fill:none;marker-end:url(#a)}
-.arr.acc{stroke:var(--acc);marker-end:url(#aa)}
-.arr.bad{stroke:var(--bad);marker-end:url(#ab)}
-.arr.dash{stroke-dasharray:4 3}
-.ah{fill:var(--muted)}.ah.acc{fill:var(--acc)}.ah.bad{fill:var(--bad)}
-.axis{stroke:var(--line);stroke-width:2}
-.dot{fill:var(--page);stroke:var(--muted);stroke-width:2}
-.dot.ok{fill:var(--ok);stroke:var(--ok)}
-.dot.acc{fill:var(--acc);stroke:var(--acc)}
-.dot.dash{stroke-dasharray:3 2}
-.halo{fill:none;stroke:var(--acc);stroke-width:1.5;opacity:.45}
-.check{stroke:var(--page);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
-</style>
-<defs><marker id="a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah "/></marker><marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah acc"/></marker><marker id="ab" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah bad"/></marker></defs>
-<rect x="40" y="36" width="170" height="64" rx="8" class="box "/><text x="125" y="65" text-anchor="middle" class="ttl ">Snapshot</text><text x="125" y="82" text-anchor="middle" class="sub">the whole workspace</text>
-<path d="M212 68H247" class="arr "/>
-<rect x="250" y="36" width="170" height="64" rx="8" class="box "/><text x="335" y="65" text-anchor="middle" class="ttl ">Run your tests</text><text x="335" y="82" text-anchor="middle" class="sub">a command from .zeit.json</text>
-<path d="M422 68H457" class="arr "/>
-<rect x="460" y="36" width="170" height="64" rx="8" class="box "/><text x="545" y="65" text-anchor="middle" class="ttl ">Check the result</text><text x="545" y="82" text-anchor="middle" class="sub">passed, files unchanged</text>
-<path d="M632 68H667" class="arr "/>
-<rect x="670" y="36" width="170" height="64" rx="8" class="box ok"/><text x="755" y="65" text-anchor="middle" class="ttl ok">Marked verified</text><text x="755" y="82" text-anchor="middle" class="sub">kept through retention</text>
-<text x="650" y="27" text-anchor="middle" class="lbl">both true</text>
-<path d="M545 101V139" class="arr acc"/>
-<text x="553" y="124" text-anchor="start" class="lbl acc">otherwise</text>
-<rect x="460" y="142" width="170" height="46" rx="8" class="box acc"/><text x="545" y="162" text-anchor="middle" class="ttl acc">Rollback offered</text><text x="545" y="179" text-anchor="middle" class="sub">to the last verified one</text>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah " fill="#C0B69F"/></marker><marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah acc" fill="#F3E8CD"/></marker><marker id="ab" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah bad" fill="#CAB78E"/></marker></defs>
+<rect width="100%" height="100%" fill="#090909"/>
+<rect x="40" y="36" width="170" height="64" rx="2" class="box " fill="#11100E" stroke="#665C47" stroke-width="1"/><text x="125" y="65" text-anchor="middle" class="ttl " font-family="Georgia,'Times New Roman',serif" font-size="13px" font-weight="600" fill="#F3E8CD">Snapshot</text><text x="125" y="82" text-anchor="middle" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">the whole workspace</text>
+<path d="M212 68H247" class="arr " stroke="#C0B69F" stroke-width="1.4" fill="none" marker-end="url(#a)"/>
+<rect x="250" y="36" width="170" height="64" rx="2" class="box " fill="#11100E" stroke="#665C47" stroke-width="1"/><text x="335" y="65" text-anchor="middle" class="ttl " font-family="Georgia,'Times New Roman',serif" font-size="13px" font-weight="600" fill="#F3E8CD">Run your tests</text><text x="335" y="82" text-anchor="middle" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">a command from .zeit.json</text>
+<path d="M422 68H457" class="arr " stroke="#C0B69F" stroke-width="1.4" fill="none" marker-end="url(#a)"/>
+<rect x="460" y="36" width="170" height="64" rx="2" class="box " fill="#11100E" stroke="#665C47" stroke-width="1"/><text x="545" y="65" text-anchor="middle" class="ttl " font-family="Georgia,'Times New Roman',serif" font-size="13px" font-weight="600" fill="#F3E8CD">Check the result</text><text x="545" y="82" text-anchor="middle" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">passed, files unchanged</text>
+<path d="M632 68H667" class="arr " stroke="#C0B69F" stroke-width="1.4" fill="none" marker-end="url(#a)"/>
+<rect x="670" y="36" width="170" height="64" rx="2" class="box ok" fill="#1C1913" stroke="#E4D4AD" stroke-width="1"/><text x="755" y="65" text-anchor="middle" class="ttl ok" font-family="Georgia,'Times New Roman',serif" font-size="13px" font-weight="600" fill="#E4D4AD">Marked verified</text><text x="755" y="82" text-anchor="middle" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">kept through retention</text>
+<text x="650" y="27" text-anchor="middle" class="lbl" font-family="Georgia,'Times New Roman',serif" font-size="11px" fill="#C0B69F">both true</text>
+<path d="M545 101V139" class="arr acc" stroke="#F3E8CD" stroke-width="1.4" fill="none" marker-end="url(#aa)"/>
+<text x="553" y="124" text-anchor="start" class="lbl acc" font-family="Georgia,'Times New Roman',serif" font-size="11px" fill="#F3E8CD">otherwise</text>
+<rect x="460" y="142" width="170" height="46" rx="2" class="box acc" fill="#1C1913" stroke="#F3E8CD" stroke-width="1"/><text x="545" y="162" text-anchor="middle" class="ttl acc" font-family="Georgia,'Times New Roman',serif" font-size="13px" font-weight="600" fill="#F3E8CD">Rollback offered</text><text x="545" y="179" text-anchor="middle" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">to the last verified one</text>
 </svg>

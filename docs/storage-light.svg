@@ -1,65 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="290" viewBox="0 0 880 290" role="img" aria-label="Storage: project files are stored by content in objects; checkpoints point to them; secrets are never saved">
 <title>Storage: project files are stored by content in objects; checkpoints point to them; secrets are never saved</title>
-<style>svg{--fg:#1f2328;--muted:#656d76;--box:#f6f8fa;--line:#d0d7de;--acc:#bc5a34;--accbg:#fbeee8;--ok:#1a7f37;--okbg:#dafbe1;--bad:#cf222e;--badbg:#ffebe9;--page:#ffffff}
-text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}
-.box{fill:var(--box);stroke:var(--line);stroke-width:1}
-.box.acc{fill:var(--accbg);stroke:var(--acc)}
-.box.ok{fill:var(--okbg);stroke:var(--ok)}
-.box.bad{fill:var(--badbg);stroke:var(--bad)}
-.box.dash{fill:none;stroke-dasharray:4 3}
-.ttl{font-size:13px;font-weight:600;fill:var(--fg)}
-.ttl.ok{fill:var(--ok)}.ttl.bad{fill:var(--bad)}.ttl.acc{fill:var(--acc)}
-.sub{font-size:11.5px;fill:var(--muted)}
-.mono{font-family:ui-monospace,SFMono-Regular,"Cascadia Mono",Consolas,Menlo,monospace}
-.lane{font-size:11px;font-weight:600;letter-spacing:.09em;fill:var(--muted)}
-.lbl{font-size:11px;fill:var(--muted)}
-.lbl.acc{fill:var(--acc)}.lbl.bad{fill:var(--bad)}.lbl.ok{fill:var(--ok)}
-.arr{stroke:var(--muted);stroke-width:1.4;fill:none;marker-end:url(#a)}
-.arr.acc{stroke:var(--acc);marker-end:url(#aa)}
-.arr.bad{stroke:var(--bad);marker-end:url(#ab)}
-.arr.dash{stroke-dasharray:4 3}
-.ah{fill:var(--muted)}.ah.acc{fill:var(--acc)}.ah.bad{fill:var(--bad)}
-.axis{stroke:var(--line);stroke-width:2}
-.dot{fill:var(--page);stroke:var(--muted);stroke-width:2}
-.dot.ok{fill:var(--ok);stroke:var(--ok)}
-.dot.acc{fill:var(--acc);stroke:var(--acc)}
-.dot.dash{stroke-dasharray:3 2}
-.halo{fill:none;stroke:var(--acc);stroke-width:1.5;opacity:.45}
-.check{stroke:var(--page);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
-</style>
-<defs><marker id="a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah "/></marker><marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah acc"/></marker><marker id="ab" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah bad"/></marker></defs>
-<text x="30" y="40" text-anchor="start" class="lane">YOUR PROJECT</text>
-<text x="330" y="40" text-anchor="start" class="lane">OBJECTS  ·  gzip, by content</text>
-<text x="630" y="40" text-anchor="start" class="lane">CHECKPOINTS</text>
-<rect x="30" y="56" width="220" height="34" rx="6" class="box"/>
-<text x="46" y="78" text-anchor="start" class="sub mono">src/app.ts</text>
-<rect x="330" y="56" width="220" height="34" rx="6" class="box"/>
-<text x="346" y="78" text-anchor="start" class="ttl mono">3f2a9c</text>
-<text x="534" y="78" text-anchor="end" class="sub">src/app.ts</text>
-<path d="M252 73H326" class="arr "/>
-<rect x="30" y="100" width="220" height="34" rx="6" class="box"/>
-<text x="46" y="122" text-anchor="start" class="sub mono">src/util.ts</text>
-<rect x="330" y="100" width="220" height="34" rx="6" class="box"/>
-<text x="346" y="122" text-anchor="start" class="ttl mono">9c1d07</text>
-<text x="534" y="122" text-anchor="end" class="sub">src/util.ts</text>
-<path d="M252 117H326" class="arr "/>
-<rect x="30" y="144" width="220" height="34" rx="6" class="box"/>
-<text x="46" y="166" text-anchor="start" class="sub mono">README.md</text>
-<rect x="330" y="144" width="220" height="34" rx="6" class="box"/>
-<text x="346" y="166" text-anchor="start" class="ttl mono">e07b44</text>
-<text x="534" y="166" text-anchor="end" class="sub">README.md</text>
-<path d="M252 161H326" class="arr "/>
-<rect x="30" y="188" width="220" height="34" rx="6" class="box bad"/>
-<text x="46" y="210" text-anchor="start" class="sub mono">.env</text>
-<rect x="330" y="188" width="220" height="34" rx="6" class="box bad dash"/>
-<text x="440" y="210" text-anchor="middle" class="lbl bad">never saved: looks like a secret</text>
-<rect x="630" y="56" width="220" height="78" rx="8" class="box "/><text x="740" y="92" text-anchor="middle" class="ttl  mono">a3f9c1</text><text x="740" y="109" text-anchor="middle" class="sub">manual · 3 files</text>
-<path d="M628 95L554 73" class="arr "/>
-<path d="M628 95L554 117" class="arr "/>
-<path d="M628 95L554 161" class="arr "/>
-<rect x="630" y="144" width="220" height="78" rx="8" class="box "/><text x="740" y="180" text-anchor="middle" class="ttl  mono">b0b0b0</text><text x="740" y="197" text-anchor="middle" class="sub">auto · 2 files</text>
-<path d="M628 183L554 117" class="arr "/>
-<path d="M628 183L554 161" class="arr "/>
-<text x="440" y="254" text-anchor="middle" class="lbl">An unchanged file is stored once, however many checkpoints point to it.</text>
-<text x="440" y="274" text-anchor="middle" class="lbl mono">Windows: %LOCALAPPDATA%\zeit-checkpoints   ·   macOS, Linux: ~/.local/share/zeit-checkpoints   ·   or $ZEIT_HOME</text>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah " fill="#C0B69F"/></marker><marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah acc" fill="#F3E8CD"/></marker><marker id="ab" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah bad" fill="#CAB78E"/></marker></defs>
+<rect width="100%" height="100%" fill="#090909"/>
+<text x="30" y="40" text-anchor="start" class="lane" font-family="Georgia,'Times New Roman',serif" font-size="11px" font-weight="600" letter-spacing=".09em" fill="#C0B69F">YOUR PROJECT</text>
+<text x="330" y="40" text-anchor="start" class="lane" font-family="Georgia,'Times New Roman',serif" font-size="11px" font-weight="600" letter-spacing=".09em" fill="#C0B69F">OBJECTS  ·  gzip, by content</text>
+<text x="630" y="40" text-anchor="start" class="lane" font-family="Georgia,'Times New Roman',serif" font-size="11px" font-weight="600" letter-spacing=".09em" fill="#C0B69F">CHECKPOINTS</text>
+<rect x="30" y="56" width="220" height="34" rx="6" class="box" fill="#11100E" stroke="#665C47" stroke-width="1"/>
+<text x="46" y="78" text-anchor="start" class="sub mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="11.5px" fill="#C0B69F">src/app.ts</text>
+<rect x="330" y="56" width="220" height="34" rx="6" class="box" fill="#11100E" stroke="#665C47" stroke-width="1"/>
+<text x="346" y="78" text-anchor="start" class="ttl mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="13px" font-weight="600" fill="#F3E8CD">3f2a9c</text>
+<text x="534" y="78" text-anchor="end" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">src/app.ts</text>
+<path d="M252 73H326" class="arr " stroke="#C0B69F" stroke-width="1.4" fill="none" marker-end="url(#a)"/>
+<rect x="30" y="100" width="220" height="34" rx="6" class="box" fill="#11100E" stroke="#665C47" stroke-width="1"/>
+<text x="46" y="122" text-anchor="start" class="sub mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="11.5px" fill="#C0B69F">src/util.ts</text>
+<rect x="330" y="100" width="220" height="34" rx="6" class="box" fill="#11100E" stroke="#665C47" stroke-width="1"/>
+<text x="346" y="122" text-anchor="start" class="ttl mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="13px" font-weight="600" fill="#F3E8CD">9c1d07</text>
+<text x="534" y="122" text-anchor="end" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">src/util.ts</text>
+<path d="M252 117H326" class="arr " stroke="#C0B69F" stroke-width="1.4" fill="none" marker-end="url(#a)"/>
+<rect x="30" y="144" width="220" height="34" rx="6" class="box" fill="#11100E" stroke="#665C47" stroke-width="1"/>
+<text x="46" y="166" text-anchor="start" class="sub mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="11.5px" fill="#C0B69F">README.md</text>
+<rect x="330" y="144" width="220" height="34" rx="6" class="box" fill="#11100E" stroke="#665C47" stroke-width="1"/>
+<text x="346" y="166" text-anchor="start" class="ttl mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="13px" font-weight="600" fill="#F3E8CD">e07b44</text>
+<text x="534" y="166" text-anchor="end" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">README.md</text>
+<path d="M252 161H326" class="arr " stroke="#C0B69F" stroke-width="1.4" fill="none" marker-end="url(#a)"/>
+<rect x="30" y="188" width="220" height="34" rx="6" class="box bad" fill="#211B12" stroke="#CAB78E" stroke-width="1"/>
+<text x="46" y="210" text-anchor="start" class="sub mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="11.5px" fill="#C0B69F">.env</text>
+<rect x="330" y="188" width="220" height="34" rx="6" class="box bad dash" fill="none" stroke="#CAB78E" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="440" y="210" text-anchor="middle" class="lbl bad" font-family="Georgia,'Times New Roman',serif" font-size="11px" fill="#CAB78E">never saved: looks like a secret</text>
+<rect x="630" y="56" width="220" height="78" rx="2" class="box " fill="#11100E" stroke="#665C47" stroke-width="1"/><text x="740" y="92" text-anchor="middle" class="ttl  mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="13px" font-weight="600" fill="#F3E8CD">a3f9c1</text><text x="740" y="109" text-anchor="middle" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">manual · 3 files</text>
+<path d="M628 95L554 73" class="arr " stroke="#C0B69F" stroke-width="1.4" fill="none" marker-end="url(#a)"/>
+<path d="M628 95L554 117" class="arr " stroke="#C0B69F" stroke-width="1.4" fill="none" marker-end="url(#a)"/>
+<path d="M628 95L554 161" class="arr " stroke="#C0B69F" stroke-width="1.4" fill="none" marker-end="url(#a)"/>
+<rect x="630" y="144" width="220" height="78" rx="2" class="box " fill="#11100E" stroke="#665C47" stroke-width="1"/><text x="740" y="180" text-anchor="middle" class="ttl  mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="13px" font-weight="600" fill="#F3E8CD">b0b0b0</text><text x="740" y="197" text-anchor="middle" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">auto · 2 files</text>
+<path d="M628 183L554 117" class="arr " stroke="#C0B69F" stroke-width="1.4" fill="none" marker-end="url(#a)"/>
+<path d="M628 183L554 161" class="arr " stroke="#C0B69F" stroke-width="1.4" fill="none" marker-end="url(#a)"/>
+<text x="440" y="254" text-anchor="middle" class="lbl" font-family="Georgia,'Times New Roman',serif" font-size="11px" fill="#C0B69F">An unchanged file is stored once, however many checkpoints point to it.</text>
+<text x="440" y="274" text-anchor="middle" class="lbl mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="11px" fill="#C0B69F">Windows: %LOCALAPPDATA%\zeit-checkpoints   ·   macOS, Linux: ~/.local/share/zeit-checkpoints   ·   or $ZEIT_HOME</text>
 </svg>

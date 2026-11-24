@@ -1,59 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="256" viewBox="0 0 900 256" role="img" aria-label="A project timeline of checkpoints: manual, auto, a verified test checkpoint, a shell snapshot and an undo point, with a rollback from now to the verified checkpoint">
 <title>A project timeline of checkpoints: manual, auto, a verified test checkpoint, a shell snapshot and an undo point, with a rollback from now to the verified checkpoint</title>
-<style>svg{--fg:#e6edf3;--muted:#9198a1;--box:#161b22;--line:#3d444d;--acc:#e8916f;--accbg:#2e1d16;--ok:#3fb950;--okbg:#11261a;--bad:#f85149;--badbg:#2d1517;--page:#0d1117}
-text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}
-.box{fill:var(--box);stroke:var(--line);stroke-width:1}
-.box.acc{fill:var(--accbg);stroke:var(--acc)}
-.box.ok{fill:var(--okbg);stroke:var(--ok)}
-.box.bad{fill:var(--badbg);stroke:var(--bad)}
-.box.dash{fill:none;stroke-dasharray:4 3}
-.ttl{font-size:13px;font-weight:600;fill:var(--fg)}
-.ttl.ok{fill:var(--ok)}.ttl.bad{fill:var(--bad)}.ttl.acc{fill:var(--acc)}
-.sub{font-size:11.5px;fill:var(--muted)}
-.mono{font-family:ui-monospace,SFMono-Regular,"Cascadia Mono",Consolas,Menlo,monospace}
-.lane{font-size:11px;font-weight:600;letter-spacing:.09em;fill:var(--muted)}
-.lbl{font-size:11px;fill:var(--muted)}
-.lbl.acc{fill:var(--acc)}.lbl.bad{fill:var(--bad)}.lbl.ok{fill:var(--ok)}
-.arr{stroke:var(--muted);stroke-width:1.4;fill:none;marker-end:url(#a)}
-.arr.acc{stroke:var(--acc);marker-end:url(#aa)}
-.arr.bad{stroke:var(--bad);marker-end:url(#ab)}
-.arr.dash{stroke-dasharray:4 3}
-.ah{fill:var(--muted)}.ah.acc{fill:var(--acc)}.ah.bad{fill:var(--bad)}
-.axis{stroke:var(--line);stroke-width:2}
-.dot{fill:var(--page);stroke:var(--muted);stroke-width:2}
-.dot.ok{fill:var(--ok);stroke:var(--ok)}
-.dot.acc{fill:var(--acc);stroke:var(--acc)}
-.dot.dash{stroke-dasharray:3 2}
-.halo{fill:none;stroke:var(--acc);stroke-width:1.5;opacity:.45}
-.check{stroke:var(--page);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
-</style>
-<defs><marker id="a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah "/></marker><marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah acc"/></marker><marker id="ab" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah bad"/></marker></defs>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah " fill="#C0B69F"/></marker><marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah acc" fill="#F3E8CD"/></marker><marker id="ab" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah bad" fill="#CAB78E"/></marker></defs>
+<rect width="100%" height="100%" fill="#090909"/>
 <line x1="30" y1="150" x2="870" y2="150" class="axis"/>
-<text x="30" y="174" text-anchor="start" class="lbl">earlier</text>
-<text x="100" y="92" text-anchor="middle" class="ttl">manual</text>
-<text x="100" y="110" text-anchor="middle" class="sub">whole workspace</text>
-<text x="100" y="127" text-anchor="middle" class="sub mono">a3f9c1</text>
-<circle cx="100" cy="150" r="8" class="dot "/>
-<text x="240" y="92" text-anchor="middle" class="ttl">auto</text>
-<text x="240" y="110" text-anchor="middle" class="sub">3 files, before edits</text>
-<text x="240" y="127" text-anchor="middle" class="sub mono">b0b0b0</text>
-<circle cx="240" cy="150" r="8" class="dot "/>
-<text x="380" y="92" text-anchor="middle" class="ttl ok">test</text>
-<text x="380" y="110" text-anchor="middle" class="sub lbl ok">tests passed</text>
-<text x="380" y="127" text-anchor="middle" class="sub mono">7e57ed</text>
-<circle cx="380" cy="150" r="8" class="dot ok"/>
-<path d="M376.4 150.2l2.6 2.6 4.8-5.2" class="check"/>
-<text x="520" y="92" text-anchor="middle" class="ttl">shell</text>
-<text x="520" y="110" text-anchor="middle" class="sub">before git reset</text>
-<text x="520" y="127" text-anchor="middle" class="sub mono">c4d1e9</text>
-<circle cx="520" cy="150" r="8" class="dot "/>
-<text x="660" y="92" text-anchor="middle" class="ttl">undo</text>
-<text x="660" y="110" text-anchor="middle" class="sub">saved by a rollback</text>
-<text x="660" y="127" text-anchor="middle" class="sub mono">u0a1b2</text>
-<circle cx="660" cy="150" r="8" class="dot dash"/>
-<text x="820" y="92" text-anchor="middle" class="ttl acc">now</text>
-<text x="820" y="110" text-anchor="middle" class="sub">your files</text>
-<circle cx="820" cy="150" r="13" class="halo"/><circle cx="820" cy="150" r="7" class="dot acc"/>
-<path d="M812 162Q600 270 389 161" class="arr acc"/>
-<text x="600" y="238" text-anchor="middle" class="lbl acc">roll back to the last verified checkpoint: preview first, undo point saved</text>
+<text x="30" y="174" text-anchor="start" class="lbl" font-family="Georgia,'Times New Roman',serif" font-size="11px" fill="#C0B69F">earlier</text>
+<text x="100" y="92" text-anchor="middle" class="ttl" font-family="Georgia,'Times New Roman',serif" font-size="13px" font-weight="600" fill="#F3E8CD">manual</text>
+<text x="100" y="110" text-anchor="middle" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">whole workspace</text>
+<text x="100" y="127" text-anchor="middle" class="sub mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="11.5px" fill="#C0B69F">a3f9c1</text>
+<circle cx="100" cy="150" r="8" class="dot " fill="#090909" stroke="#C0B69F" stroke-width="2"/>
+<text x="240" y="92" text-anchor="middle" class="ttl" font-family="Georgia,'Times New Roman',serif" font-size="13px" font-weight="600" fill="#F3E8CD">auto</text>
+<text x="240" y="110" text-anchor="middle" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">3 files, before edits</text>
+<text x="240" y="127" text-anchor="middle" class="sub mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="11.5px" fill="#C0B69F">b0b0b0</text>
+<circle cx="240" cy="150" r="8" class="dot " fill="#090909" stroke="#C0B69F" stroke-width="2"/>
+<text x="380" y="92" text-anchor="middle" class="ttl ok" font-family="Georgia,'Times New Roman',serif" font-size="13px" font-weight="600" fill="#E4D4AD">test</text>
+<text x="380" y="110" text-anchor="middle" class="sub lbl ok" font-family="Georgia,'Times New Roman',serif" font-size="11px" fill="#E4D4AD">tests passed</text>
+<text x="380" y="127" text-anchor="middle" class="sub mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="11.5px" fill="#C0B69F">7e57ed</text>
+<circle cx="380" cy="150" r="8" class="dot ok" fill="#E4D4AD" stroke="#E4D4AD" stroke-width="2"/>
+<path d="M376.4 150.2l2.6 2.6 4.8-5.2" class="check" stroke="#090909" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="520" y="92" text-anchor="middle" class="ttl" font-family="Georgia,'Times New Roman',serif" font-size="13px" font-weight="600" fill="#F3E8CD">shell</text>
+<text x="520" y="110" text-anchor="middle" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">before git reset</text>
+<text x="520" y="127" text-anchor="middle" class="sub mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="11.5px" fill="#C0B69F">c4d1e9</text>
+<circle cx="520" cy="150" r="8" class="dot " fill="#090909" stroke="#C0B69F" stroke-width="2"/>
+<text x="660" y="92" text-anchor="middle" class="ttl" font-family="Georgia,'Times New Roman',serif" font-size="13px" font-weight="600" fill="#F3E8CD">undo</text>
+<text x="660" y="110" text-anchor="middle" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">saved by a rollback</text>
+<text x="660" y="127" text-anchor="middle" class="sub mono" font-family="ui-monospace,SFMono-Regular,&quot;Cascadia Mono&quot;,Consolas,Menlo,monospace" font-size="11.5px" fill="#C0B69F">u0a1b2</text>
+<circle cx="660" cy="150" r="8" class="dot dash" fill="#090909" stroke="#C0B69F" stroke-width="2" stroke-dasharray="3 2"/>
+<text x="820" y="92" text-anchor="middle" class="ttl acc" font-family="Georgia,'Times New Roman',serif" font-size="13px" font-weight="600" fill="#F3E8CD">now</text>
+<text x="820" y="110" text-anchor="middle" class="sub" font-family="Georgia,'Times New Roman',serif" font-size="11.5px" fill="#C0B69F">your files</text>
+<circle cx="820" cy="150" r="13" class="halo" fill="none" stroke="#F3E8CD" stroke-width="1.5" opacity=".45"/><circle cx="820" cy="150" r="7" class="dot acc" fill="#F3E8CD" stroke="#F3E8CD" stroke-width="2"/>
+<path d="M812 162Q600 270 389 161" class="arr acc" stroke="#F3E8CD" stroke-width="1.4" fill="none" marker-end="url(#aa)"/>
+<text x="600" y="238" text-anchor="middle" class="lbl acc" font-family="Georgia,'Times New Roman',serif" font-size="11px" fill="#F3E8CD">roll back to the last verified checkpoint: preview first, undo point saved</text>
 </svg>

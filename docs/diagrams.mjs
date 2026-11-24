@@ -5,10 +5,10 @@ import path from 'node:path'
 const [outDir] = process.argv.slice(2)
 fs.mkdirSync(outDir, { recursive: true })
 
-const LIGHT = '--fg:#1f2328;--muted:#656d76;--box:#f6f8fa;--line:#d0d7de;--acc:#bc5a34;--accbg:#fbeee8;--ok:#1a7f37;--okbg:#dafbe1;--bad:#cf222e;--badbg:#ffebe9;--page:#ffffff'
-const DARK = '--fg:#e6edf3;--muted:#9198a1;--box:#161b22;--line:#3d444d;--acc:#e8916f;--accbg:#2e1d16;--ok:#3fb950;--okbg:#11261a;--bad:#f85149;--badbg:#2d1517;--page:#0d1117'
+const LIGHT = '--fg:#F3E8CD;--muted:#C0B69F;--box:#11100E;--line:#665C47;--acc:#F3E8CD;--accbg:#1C1913;--ok:#E4D4AD;--okbg:#1C1913;--bad:#CAB78E;--badbg:#211B12;--page:#090909'
+const DARK = '--fg:#F3E8CD;--muted:#C0B69F;--box:#11100E;--line:#665C47;--acc:#F3E8CD;--accbg:#1C1913;--ok:#E4D4AD;--okbg:#1C1913;--bad:#CAB78E;--badbg:#211B12;--page:#090909'
 const base = `
-text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}
+text{font-family:Georgia,'Times New Roman',serif}
 .box{fill:var(--box);stroke:var(--line);stroke-width:1}
 .box.acc{fill:var(--accbg);stroke:var(--acc)}
 .box.ok{fill:var(--okbg);stroke:var(--ok)}
@@ -38,6 +38,28 @@ text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helveti
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 const marker = (id, cls) => `<marker id="${id}" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" class="ah ${cls}"/></marker>`
 
+function inlineStyles(svg) {
+ const css=svg.match(/<style>([\s\S]*?)<\/style>/)?.[1]??"";
+ const vars=Object.fromEntries([...css.matchAll(/(--[\w-]+):([^;}]+)/g)].map(m=>[m[1],m[2]]));
+ const rules=[...css.matchAll(/([^{}]+)\{([^{}]+)\}/g)].filter(m=>m[1].trim()!=="svg");
+ return svg.replace(/<style>[\s\S]*?<\/style>\n?/,"").replace(/<(text|rect|path|circle)(\s[^>]*?)(\/?)>/g,(full,tag,attrs,end)=>{
+  const classes=(attrs.match(/\bclass="([^"]*)"/)?.[1]??"").split(/\s+/), values={};
+  for(const rule of rules){
+   const [element,...required]=rule[1].trim().split(".");
+   if((element===""||element===tag)&&required.every(c=>classes.includes(c))){
+    for(const part of rule[2].split(";")){
+     const i=part.indexOf(":");
+     if(i>0)values[part.slice(0,i).trim()]=part.slice(i+1).trim().replace(/var\((--[\w-]+)\)/g,(_,k)=>vars[k]);
+    }
+   }
+  }
+  for(const [key,value] of Object.entries(values)){
+   attrs=attrs.replace(new RegExp(`\\s${key}="[^"]*"`,"g"),"")+` ${key}="${value.replaceAll('"',"&quot;")}"`;
+  }
+  return `<${tag}${attrs}${end}>`;
+ });
+}
+
 // GitHub picks between the two with <picture>, following the theme the reader chose.
 function svg(name, w, h, title, body) {
   for (const [theme, vars] of [['light', LIGHT], ['dark', DARK]]) {
@@ -46,10 +68,11 @@ function svg(name, w, h, title, body) {
 <title>${esc(title)}</title>
 <style>${css}</style>
 <defs>${marker('a', '')}${marker('aa', 'acc')}${marker('ab', 'bad')}</defs>
+<rect width="100%" height="100%" fill="#090909"/>
 ${body.join('\n')}
 </svg>
 `
-    fs.writeFileSync(path.join(outDir, `${name}-${theme}.svg`), doc)
+    fs.writeFileSync(path.join(outDir, `${name}-${theme}.svg`), inlineStyles(doc))
   }
 }
 
@@ -58,7 +81,7 @@ const text = (x, y, s, cls, anchor = 'middle') => `<text x="${x}" y="${y}" text-
 function box(x, y, w, h, title, sub, kind = '', { mono = false, monoTitle = false } = {}) {
   const cx = x + w / 2
   const cy = y + h / 2
-  const out = [`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" class="box ${kind}"/>`]
+  const out = [`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="2" class="box ${kind}"/>`]
   out.push(text(cx, sub ? cy - 3 : cy + 4.5, title, `ttl ${kind}${monoTitle ? ' mono' : ''}`))
   if (sub) out.push(text(cx, cy + 14, sub, `sub${mono ? ' mono' : ''}`))
   return out.join('')
