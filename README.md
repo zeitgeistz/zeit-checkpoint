@@ -2,6 +2,8 @@
 
 # zeit-checkpoint
 
+<img src="docs/banner.png" alt="zeit-checkpoint timeline with a verified checkpoint and rollback command" width="820">
+
 **An undo button for everything your Claude Code agent touches.**
 
 Every file is saved before the agent edits it, risky shell commands get a snapshot first,<br>
